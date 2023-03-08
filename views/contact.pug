@@ -1,0 +1,21 @@
+extends base.pug
+
+block scripts 
+    script(src='../static/index.js')
+block style 
+    style
+      include ../static/style.css
+      include ../static/styleContact.css
+block content 
+    div.container
+        h1.center.heading Contact page
+        form(action="/contact", method="post",class="form")
+            input(type="text" placeholder="Enter Your Name" name="name" class="formInput center") 
+            input(type="phone" placeholder="Enter Your Phone" name="phone" class="formInput center") 
+            input(type="Email" placeholder="Enter Your Email" name="Email" class="formInput center")
+            input(type="text" placeholder="Enter Your Address" name="address" class="formInput center")
+            input(type="number" placeholder="Enter Your Age" name="card" class="formInput center")
+            input(type="text" placeholder="Enter Your Gender" name="gender" class="formInput center")
+            textarea(name="idea", cols="30", rows="10" placeholder="Enter Your Musical Feat" class="formInput center") 
+            button.btn 
+                |Submit

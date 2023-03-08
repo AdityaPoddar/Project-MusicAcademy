@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Roboto+Slab&display=swap');
+*
+{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+#navbar
+{
+    /* border:2px solid red; */
+    /* height: 60px; */
+    background-color: rgb(211 ,158 ,24);
+}
+
+#navbar .logo
+{
+    color:rgba(185, 15, 15, 0.959);
+    position: absolute;
+    top: 15px;
+    left:15px;
+    font-weight: bold;
+    font-size: 25px;
+    text-shadow: 5px 4px  rgb(255, 102, 0);
+    
+}
+#navbar ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px;
+}
+
+#navbar ul li 
+{
+    list-style: none;
+    padding:5px 15px;
+    font-family: 'Roboto Slab', serif;
+}
+
+#navbar ul li a
+{
+    color:rgba(185, 15, 15, 0.959);
+    padding:10px 25px;
+    text-decoration:none;
+    font-size:20px;
+    /* font-style: italic; */
+} 
+#navbar ul li a:hover,#navbar ul li a.active
+{
+    color:black;
+    background-color: rgba(211, 139, 24, 0.829);
+    border-radius: 50px;
+
+}
+
+/* home section */
+#homeSection
+{
+    /* border:2px solid red; */
+    background: url(../static/musicbg.jpg) no-repeat center center/cover;
+    height:600px;
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+#homeSection div
+{
+    /* border: 2px solid red; */
+    height: 80%;
+    width: 90%;
+    box-shadow:inset -2px -2px 70px 20px rgba(185, 15, 15, 0.185);
+    border-radius: 25px;
+    
+}
+#homeSection div h1
+{
+    line-height: 150px;
+    
+    
+}
+#homeSection div p
+{
+    color:rgba(4, 27, 65, 0.959);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* sponser section */
+#sponserSection
+{
+    /* border:2px solid red; */
+    background: rgb(240 201 77);
+    
+    /* border: 1px solid black; */
+}
+#sponserSection .sponser
+{
+    height: 199px;
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    /* border-radius: 50%; */
+    /* border: 2px solid black; */
+}
+#sponserSection .sponser .SpImg
+{
+    height: 112px;
+    padding: 15px 74px;
+    border: 1px solid black;
+    /* box-shadow:  -5px -5px 10px 10px rgba(163, 37, 37, 0.767), 5px 5px rgba(163, 37, 37, 0.767); */
+}
+#sponserSection .sponser .SpImg:hover
+{
+    transform: scale(1.3);
+    /* border-radius: 50%; */
+}
+
+
+/* services section */
+#servicesSection
+{
+    /* border:2px solid red; */
+    height:300px;
+    background-color:  rgb(240 201 77);
+    /* border: 1px solid black; */
+}
+#servicesSection h1
+{
+    margin-bottom: 5px;;
+}
+#servicesSection .card
+{
+    display: flex;
+    
+    /* border:2px solid red; */
+    justify-content: space-around;
+    align-items: center;
+}
+#servicesSection .cards
+{
+    height: 250px;
+    width: 230px;
+    border-radius: 10px;
+    /* border:2px dotted red; */
+    /* background-color: rgba(187, 40, 40, 0.733); */
+    /* box-shadow: 10px 10px 5px 5px rgb(211, 139, 24); ; */
+    display :flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+#servicesSection .cards .cards-img img
+{
+        height: 245px;
+        width: 99%;
+        /* display: none; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    /* border: 3px solid black; */
+    border-radius: 30px;
+    display: block;
+    padding: 5px 10px;
+    /* margin: 5px 2px; */
+    margin-top: 15px
+    /* transition: transform 0.2 linear; */
+}
+/* #servicesSection .cards .cards-img img:hover
+{
+    display: none; 
+    background-color: rgba(187, 40, 40, 0.733);
+    transform: scale(1.2);
+     transform: rotate(240deg); 
+    } */
+    #servicesSection .cards p
+{
+    text-align: center;
+    color: rgba(187, 40, 40, 0.733);
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    
+}
+
+/* contact section */
+#contactSection
+{
+    border:2px solid red;
+}
+
+#footer
+{
+    height:50px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color:  rgb(240 201 77);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+/* utility class */
+.center
+{
+    text-align:center;
+}
+.heading
+{
+    color:rgb(187, 40, 40);
+   
+
+}

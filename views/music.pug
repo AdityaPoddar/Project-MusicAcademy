@@ -1,0 +1,58 @@
+doctype html
+html
+  head
+    title Sarita MusicAcademy|Kuleshwor
+    style
+      include ../static/style.css
+  body
+    nav#navbar 
+        div.logo
+            em S-academy
+        div.list
+            ul  
+                li #[a(href='/').active Home]
+                li #[a(href='#sponserSection') Sponsers]
+                li #[a(href='#servicesSection') Services]
+                li #[a(href='/contact') Contact Us]
+    section#homeSection 
+        div 
+            h1.center.heading Home 
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates omnis quisquam qui modi sunt, quod quas molestias officia deleniti at facere! Dicta voluptate perferendis enim cupiditate temporibus! Nisi inventore placeat sequi vel aliquam? Pariatur unde nihil in repudiandae, quo officia non quia, ipsum officiis facere explicabo perspiciatis beatae a? Perspiciatis velit nesciunt itaque veritatis exercitationem ad voluptates, ut nam saepe natus, non ratione, pariatur adipisci et recusandae maiores porro! Modi exercitationem nam, dolore ratione delectus sed? Tempore quos harum eligendi doloribus. Porro, ea. Nihil velit, cumque, voluptas molestiae fugit eaque error odio unde a aperiam laboriosam, accusantium commodi sint quo.
+    section#sponserSection
+         div 
+            h1.center.heading Sponsers 
+         div.sponser
+            img(src="/static/logo1.png", alt="Sponsers" class="SpImg")
+            img(src="/static/logo2.png", alt="Sponsers" class="SpImg")
+            img(src="/static/logo3.png", alt="Sponsers" class="SpImg")
+            img(src="/static/logo4.png", alt="Sponsers" class="SpImg")
+            img(src="/static/logo5.png", alt="Sponsers" class="SpImg")
+    section#servicesSection 
+         div
+            h1.center.heading Services 
+         div.card
+            div.cards
+                div.cards-img
+                    img(src="/static/1.jpg")
+                p Choir.
+            div.cards
+                div.cards-img
+                    img(src="/static/2.jpg")
+                p Beat Boxing.
+            div.cards
+                div.cards-img
+                    img(src="/static/3.jpg")
+                p Acapella.
+            div.cards
+                div.cards-img
+                    img(src="/static/4.jpg")
+                p Instruments.
+            
+    section#contactSection  
+         div 
+            h1.center.heading Contact 
+    footer#footer.center  
+        | Copyright &copy; SaritaMusicAcademy.com |All right Reserved
+        
+    script
+      include ../static/index.js

@@ -1,0 +1,20 @@
+{
+  "name": "musicacademy",
+  "version": "1.0.0",
+  "description": "Music the ultimate peace",
+  "main": "Music.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "music"
+  ],
+  "author": "Aditya Poddar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.13",
+    "nodemon": "^2.0.13",
+    "pug": "^3.0.2"
+  }
+}
